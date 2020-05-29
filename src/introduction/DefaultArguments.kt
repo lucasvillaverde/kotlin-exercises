@@ -16,7 +16,7 @@ public String foo(String name) {
 }
 
 All these Java overloads can be replaced with one function in Kotlin. Change the declaration of the function foo in a way that makes the code using foo compile. Use default and named arguments.*/
-fun foo (name: String, number: Int = 42, toUpperCase: Boolean = false) =
+fun foo(name: String, number: Int = 42, toUpperCase: Boolean = false) =
     (if (toUpperCase) name.toUpperCase() else name) + number
 
 fun useFoo() = listOf(
